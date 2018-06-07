@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from "./App";
 import axios from 'axios';
 //import './index.css';
 //import Card from './Card';
 //import registerServiceWorker from './registerServiceWorker';
-
+/*
 const Card = (props) => {
     return (
         <div style={{magin: '1em'}}>
@@ -22,7 +23,7 @@ const Card = (props) => {
 const CardList = (props) => {
     return (
         <div>
-            {props.cards.map(card => <Card {...card}/>)}
+            {props.cards.map(card => <Card key={card.id} {...card}/>)}
         </div>
     );
 }
@@ -35,6 +36,7 @@ class Form extends React.Component {
         axios.get(`https://api.github.com/users/${this.state.userName}`)
         .then(resp => {
             this.props.onSubmit(resp.data);
+            this.setState({ userName: ''});
         });
     };
     render() {
@@ -74,6 +76,6 @@ class App extends React.Component {
         );
     }
 }
-
+*/
 ReactDOM.render(<App />, document.getElementById('root'));
 //registerServiceWorker();
