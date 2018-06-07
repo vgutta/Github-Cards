@@ -14,12 +14,16 @@ class Form extends React.Component {
     };
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} 
+                className="pure-form"
+                style={{'margin-left': '400px', 'margin-right': '100px', 'margin-top': "1.25em", 'margin-bottom': '1.25em'}}>
                 <input type="text" 
+                className="pure-input-rounded"
+                style={{'margin-right': '1em', width: '20em'}}
                 value={this.state.userName}
                 onChange={(event) => this.setState({ userName: event.target.value})}
                 placeholder="GitHub Username" required/>
-                <button type="submit">Add Card</button>
+                <button type="submit" className="pure-button">Add Card</button>
             </form>
         );
     }

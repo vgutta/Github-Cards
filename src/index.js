@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
-import axios from 'axios';
-//import './index.css';
-//import Card from './Card';
-//import registerServiceWorker from './registerServiceWorker';
+
 /*
 const Card = (props) => {
     return (
@@ -78,4 +75,3 @@ class App extends React.Component {
 }
 */
 ReactDOM.render(<App />, document.getElementById('root'));
-//registerServiceWorker();
