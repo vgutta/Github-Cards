@@ -6,9 +6,9 @@ import CardList from './CardList';
 class App extends React.Component {
     state = {
         cards: [
-            { name: "Vineeth Gutta",
-            avatar_url: "https://avatars1.githubusercontent.com/u/17258339?v=4",
-            company: "@vipud "},
+            { name: "Tim Berners-Lee",
+            avatar_url: "https://avatars3.githubusercontent.com/u/1254848?v=4",
+            company: "MIT"},
         ]
     };
 
