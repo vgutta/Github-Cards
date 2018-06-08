@@ -21,9 +21,15 @@ class App extends React.Component {
     render () {
         return (
             <div>
-                <Form onSubmit={this.addNewCard}/>
-                <CardList cards={this.state.cards}/>
+                <div>
+                    <Form onSubmit={this.addNewCard}/>
+                    
+                </div>
+                <div className="row-5">
+                    <CardList cards={this.state.cards}/>
+                </div>
             </div>
+            
         );
     }
 }
